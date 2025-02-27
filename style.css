@@ -2,7 +2,7 @@
 /* start global classes */
 :root {
   /* body bg color */
-  --bodyColor: radial-gradient(circle, #ff0000, #0000ff);
+  --bodyColor: #ffffff ;
 
   /* box bg color */
   --boxColor: #585a58;
@@ -23,13 +23,13 @@
   --border-radius: 5px;
 }
 body {
-  color: white;
+  color: black;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
   font-family: "Montserrat" , sans-serif;
   color: var(--primaryColor);
-  background: radial-gradient(circle, #000000, #000000);
+  background: #ffffff ;
   text-align: left;
   position: relative;
   overflow-x: hidden;
