@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS.css file -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <title>Adarsh | ly</title>
+</head>
+<body>  
+    <!-- Start Main -->
+    <section class="home">
+        
+        <!-- Box -->
+        <div class="home-box" data-aos="fade-in">
+            <!-- Music Button -->
+            <button class="music-toggle" id="music-toggle">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <!-- Profile Image -->
+            <div class="home-img">
+                <img src="IMG_20250224_111311_591.webp" alt="Profile Image">
+            </div>
+            <!-- Main Content -->
+            <div class="particle-container">
+                <div class="home-content">
+                    <h1></h1>
+                    <div></div>
+                    <h1><span>Adarsh</span> | ly</h1> 
+                    <p>Gamer / Dev</p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://github.com/NotGpl"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://youtube.com/c/Gamerprolivexd"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://threads.net/adarsh.lyy"><i class="fa-brands fa-threads"></i></a>
+                        <a href="https://instagram.com/adarsh.lyy"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+            </div>
+            </div>
+        </div>
+            <div class="home-box" data-aos="fade-in">
+            
+
+            
+            <!-- Main Content -->
+            <div class="particle-container">
+                <div class="home-content">
+                    <h1></h1>
+                    <div></div>
+                    <a class="btn" href="https://notgpl.live">Page</a> &nbsp &nbsp
+                    <a class="btn" href="https://srvnssvhss.notgpl.live">School</a>
+                    <p>Currenty doing nothing 🌜</p>
+                    
+            </div>
+            </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="gataonly.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- AOS Script -->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, 
+            once: true
+        });
+
+        // Music Toggle Button
+        const audio = document.getElementById('background-music');
+        const musicToggle = document.getElementById('music-toggle');
+
+        musicToggle.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                musicToggle.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                audio.pause();
+                musicToggle.innerHTML = '<i class="fas fa-play"></i>';
+            }
+        });
+    
+    </script>
+    
+
+    <!-- Vanilla Tilt -->
+    <script>
+        if (typeof VanillaTilt !== 'undefined') {
+            VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+                max: 20,
+                speed: 300,
+                glare: true,
+                "max-glare": 0.1
+            });
+        }
+    </script>
+     <!--  Tilt.js file     -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</body>
+                      </html>
